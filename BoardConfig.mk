@@ -15,17 +15,12 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_CPU_VARIANT := cortex-a7
 
+# Kernel
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom user_debug=23 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci
-
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x80008000 --ramdisk_offset 0x82000000 --tags_offset 0x81e00000 --dt device/samsung/coreprimelte/dt.img
-
-# prebuilt kernel
 TARGET_PREBUILT_KERNEL := device/samsung/coreprimelte/kernel
-# else uncomment below to build from sauce
-#TARGET_KERNEL_SOURCE := kernel/samsung/coreprimelte
-#TARGET_KERNEL_CONFIG := msm8916_defconfig
 
 #Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824
@@ -37,7 +32,7 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Recovery
 TARGET_USERIMAGES_USE_EXT4 := true
-#TARGET_USERIMAGES_USE_F2FS := true
+TARGET_USERIMAGES_USE_F2FS := true
 BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGB_565"
 

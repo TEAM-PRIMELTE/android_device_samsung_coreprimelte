@@ -42,7 +42,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="samsung/omni_coreprimelte/coreprimelte:5.1.1/LYZ28E/1:eng/test-keys"
 endif
 
-# Kernel inline build
-#TARGET_KERNEL_CONFIG := coreprimelte_defconfig
-#TARGET_VARIANT_CONFIG := coreprimelte_defconfig
-#TARGET_SELINUX_CONFIG := coreprimelte_defconfig
