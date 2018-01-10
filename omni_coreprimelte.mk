@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_NAME := omni_coreprimelte
 PRODUCT_DEVICE := coreprimelte
-PRODUCT_BRAND := Oppo
-PRODUCT_MODEL := R7f
+PRODUCT_BRAND := coreprimelte
+PRODUCT_MODEL := SM-G630M
 PRODUCT_MANUFACTURER := Oppo
 
 # Kernel inline build
