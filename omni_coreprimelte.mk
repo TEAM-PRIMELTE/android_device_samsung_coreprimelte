@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
+# Time Zone data for Recovery
+PRODUCT_COPY_FILES += \
+    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
+
 PRODUCT_NAME := omni_coreprimelte
 PRODUCT_DEVICE := coreprimelte
 PRODUCT_BRAND := samsung
